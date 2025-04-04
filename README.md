@@ -1,4 +1,4 @@
-#MVVM
+# MVVM
 MVVM stands for Model, View, ViewModel.
 
 **Model**: This is the data layer of the application. Data layer classes should not directly communicate with the View. Communications should always happen through the ViewModels.
