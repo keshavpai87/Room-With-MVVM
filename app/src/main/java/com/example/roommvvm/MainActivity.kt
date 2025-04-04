@@ -56,7 +56,9 @@ class MainActivity : AppCompatActivity() {
     private fun displaySubscribersList() {
         subscriberViewModel.subscribers.observe(this, Observer {
             Log.i("My Tag", it.toString())
-            binding.subscriberRecyclerView.adapter = MyRecyclerViewAdapter(it, {selectedItem:Subscriber -> listItemClicked(selectedItem)})
+            binding.subscriberRecyclerView.adapter = MyRecyclerViewAdapter(
+                it, {selectedItem:Subscriber -> listItemClicked(selectedItem)}
+            )
         })
     }
 
